@@ -13,3 +13,4 @@ authlib
 httpx
 itsdangerous
 cloudinary
+alembic

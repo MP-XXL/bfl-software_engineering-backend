@@ -1,10 +1,10 @@
 from sqlalchemy.orm import Session
-from ..database import get_db
+from database import get_db
 from fastapi import APIRouter, HTTPException, status, Depends, UploadFile, File
-from ..models import users_model
-from ..models import profile_pictures_model
-from ..schemas.users_schema import User, UserResponse, UserUpdate
-from ..middlewares.auth import AuthMiddleware
+from models import users_model
+from models import profile_pictures_model
+from schemas.users_schema import User, UserResponse, UserUpdate
+from middlewares.auth import AuthMiddleware
 from datetime import datetime
 from typing import List
 import logging

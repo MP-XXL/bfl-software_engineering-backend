@@ -23,8 +23,8 @@ services:
       - CLOUDINARY_API_KEY=${CLOUDINARY_API_KEY}
       - CLOUDINARY_API_SECRET=${CLOUDINARY_API_SECRET}
     volumes:
-      - ./app:/app/app
-      - .app/static/uploads:/app/static/uploads
+      - ./app:/app
+     
     depends_on:
       profile_api_db:
         condition: service_healthy
