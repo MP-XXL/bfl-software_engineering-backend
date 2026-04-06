@@ -38,7 +38,7 @@ def login(login_request: LoginRequest, db: Session = Depends(get_db)):
     claims = {
         'sub': str(userExists.id),
         'email': userExists.email,
-        'user_id': str(userExists.id)
+        # 'user_id': str(userExists.id)
     }
 
     access_token = create_access_token(claims)
